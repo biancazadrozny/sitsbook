@@ -279,7 +279,7 @@ In what follows, we use the data frame with the LEM samples. The data.frame cont
 ## R
 ```{r}
 #| eval: false
-# Retrieve the time series for each samples based on a data.frame
+# Retrieve the time series for each sample based on a data.frame
 samples_lem_time_series <- sits_get_data(
     cube = lem_cube,
     samples = df_samples_cerrado_lem
@@ -288,7 +288,7 @@ samples_lem_time_series <- sits_get_data(
 ## Python 
 ```{python}
 #| eval: false
-# Retrieve the time series for each samples based on a data.frame
+# Retrieve the time series for each sample based on a data.frame
 samples_lem_time_series = sits_get_data(
     cube = lem_cube,
     samples = df_samples_cerrado_lem
