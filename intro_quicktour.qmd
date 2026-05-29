@@ -391,7 +391,7 @@ It is helpful to plot the dispersion of the time series. In what follows, for br
 ::: {.panel-tabset}
 ## R
 ```{r}
-#| label: fig-ts-forest-r
+#| label: fig-ts-cropland-r
 #| out-width: 90%
 #| fig-cap: |
 #|   Joint plot of all samples in band NDVI for label Cropland_2_cycles.
@@ -415,10 +415,10 @@ plot(samples_crops_2cycles_ndvi)
 ```
 ## Python
 ```{python}
-#| label: fig-ts-forest-py
+#| label: fig-ts-cropland-py
 #| out-width: 100%
 #| fig-cap: |
-#|   Joint plot of all samples in band NDVI for label Forest.
+#|   Joint plot of all samples in band NDVI for label Cropland_2_cycles.
 #| fig-align: center
 # Select all samples with label "Cropland_2_cycles" using `query` 
 # since the label attribute is a column of the samples data.frame
@@ -498,7 +498,7 @@ lem_probs <- sits_classify(
     output_dir = tempdir_r
 )
 
-# Plot the probability cube for class Forest
+# Plot the probability cube for class Cropland_2_cycles
 plot(lem_probs, labels = "Cropland_2_cycles", palette = "YlOrBr")
 ```
 ## Python
@@ -513,7 +513,7 @@ lem_probs = sits_classify(
     output_dir = tempdir_py
 )
 
-# Plot the probability cube for class Forest
+# Plot the probability cube for class Cropland_2_cycles
 plot(lem_probs, labels = "Cropland_2_cycles", palette = "YlOrBr")
 ```
 :::
@@ -532,7 +532,7 @@ After completing the classification, we plot the probability maps for the class 
 
 ## Spatial smoothing
 
-When working with big Earth observation data, there is much variability within each class. As a result, some pixels will be misclassified. These errors are more likely to occur in transition areas between classes. To address these problems, `sits_smooth()` takes a probability cube as input and uses the class probabilities of each pixel's neighborhood to reduce labeling uncertainty. Plotting the smoothed probability map for the class Forest shows that most outliers have been removed.
+When working with big Earth observation data, there is much variability within each class. As a result, some pixels will be misclassified. These errors are more likely to occur in transition areas between classes. To address these problems, `sits_smooth()` takes a probability cube as input and uses the class probabilities of each pixel's neighborhood to reduce labeling uncertainty. Plotting the smoothed probability map for the class Cropland_2_cycles shows that most outliers have been removed.
 
 :::{.panel-tabset}
 ## R
@@ -607,7 +607,7 @@ plot(lem_map)
 #| label: fig-map-intro
 #| out-width: 100%
 #| fig-cap: |
-#|   Probability map for class Cropland_2_cycles.
+#|   Classification map for class Cropland_2_cycles.
 #| fig-align: center
 knitr::include_graphics(("./images/lem_map.png"))
 ```
