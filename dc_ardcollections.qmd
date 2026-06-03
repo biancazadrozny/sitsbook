@@ -56,7 +56,7 @@ The Landsat-4/5/7/8/9 satellites use the Worldwide Reference System (WRS-2), whi
 #| label: fig-wrs-datacubes
 #| out-width: 80%
 #| fig-cap: |
-#|   MGRS tiling system used by Sentinel-2 images (source: US Army).
+#|   WRS-2 tiling system used by Landsat images (source: US Army).
 #| fig-align: center
 knitr::include_graphics("./images/landsat_wrs_grid.png")
 ```
