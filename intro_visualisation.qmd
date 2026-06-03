@@ -328,7 +328,7 @@ These colors are grouped by typical legends used by the Earth observation commun
 #| echo: false
 #| out-width: 80%
 #| fig-cap: |
-#|   Colors used in the sits package to represeny IGBP legend.
+#|   Colors used in the sits package to represent IGBP legend.
 #| fig-align: center
 # Display default `sits` colors
 sits_colors_show(legend = "IGBP")
