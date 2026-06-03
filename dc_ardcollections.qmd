@@ -440,7 +440,7 @@ The BDC uses three hierarchical grids based on the Albers Equal Area projection 
 #| label: fig-bdc-datacubes
 #| out-width: 80%
 #| fig-cap: |
-#|   Hierarchical BDC tiling system showing (a) large BDC grid overlayed on Brazilian biomes, (b) one learge tile from the grid used for CBERS-4 AWFI data, (c) four medium tiles from the grid used for LANDSAT data; and (d) sixteen small tiles from the grid used for SENTINEL-2 data. Tiles in (b), (c), and (d) are nested.
+#|   Hierarchical BDC tiling system showing (a) large BDC grid overlayed on Brazilian biomes, (b) one large tile from the grid used for CBERS-4 AWFI data, (c) four medium tiles from the grid used for LANDSAT data; and (d) sixteen small tiles from the grid used for SENTINEL-2 data. Tiles in (b), (c), and (d) are nested.
 #| fig-align: center
 knitr::include_graphics("./images/bdc_grid.png")
 ```
