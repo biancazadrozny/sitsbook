@@ -156,7 +156,7 @@ plot(cube_s1_rtc_20LMR, band = "VH")
 knitr::include_graphics("./images/dctexture-s1-orig.png") 
 ```
 
-The plot on @fig-dctexture-s1-orig shows a situation of small forest patches inside an area with much deforestation. If also shows that the forest areas have a grainy and unequal texture. There are areas near the center of the image which show higly degraded forest areas. To try to capture these textural differences, we use GLCM Mean and GLCM Contrast, following recommendations by Hall-Beyer [@Hall-Beyer2017]. Each measure captures different aspects of image texture.
+The plot on @fig-dctexture-s1-orig shows a situation of small forest patches inside an area with much deforestation. If also shows that the forest areas have a grainy and unequal texture. There are areas near the center of the image which show highly degraded forest areas. To try to capture these textural differences, we use GLCM Mean and GLCM Contrast, following recommendations by Hall-Beyer [@Hall-Beyer2017]. Each measure captures different aspects of image texture.
 
 The GLCM Mean represents the average grey level of the pixel pairs in the co-occurrence matrix. For a normalized GLCM matrix $P(i,j)$, the mean is calculated along rows or columns (since in symmetric matrices they are the same):
 
