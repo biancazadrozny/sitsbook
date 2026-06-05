@@ -40,7 +40,7 @@ GLCM (Gray Level Co-occurrence Matrix) texture measures capture spatial relation
 
 A GLCM is a 2-D histogram that records how often a pixel with gray level i occurs at a fixed spatial offset (distance d, direction θ) from a pixel with gray level j. It is therefore a second-order statistic: instead of looking at single-pixel values, it captures pairwise relationships. These measures quantify spatial relationships between grey levels in an image and are used to describe texture—patterns of variation in pixel intensity that convey surface properties such as smoothness, roughness, regularity, or granularity. The idea was first formalised by Haralick and colleagues in 1973 [@Haralick1973] and remains one of the most widely used texture descriptors in computer vision, remote sensing and medical imaging.
 
-The `sits` implementation of GLCM measures is follows the guidelines and equations described by Hall-Beyer [@Hall-Beyer2017] and uses the following parameters:
+The `sits` implementation of GLCM measures follows the guidelines and equations described by Hall-Beyer [@Hall-Beyer2017] and uses the following parameters:
 
 - `cube` : a data cube
 - `window_size` : odd number with the size of the sliding window.
